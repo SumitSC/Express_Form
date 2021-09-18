@@ -1,0 +1,32 @@
+{
+  "name": "userweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "nodemon": "^2.0.12",
+    "npm": "^7.21.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kailashw/express-form-handling.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kailashw/express-form-handling/issues"
+  },
+  "homepage": "https://github.com/Kailashw/express-form-handling#readme",
+  "description": ""
+}

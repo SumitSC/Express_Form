@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <a style="margin: auto;" href="index.html">Home Page</a>
+    <a style="margin: auto;" href="/logout">Click to logout</a>
+    <div class="todo-container">
+        <h2>Edit To-Do </h2>
+        <div class="todo">
+            <form action="/todo/edit/<%= data._id %>" method="POST" class="todo-header">
+                <input type="text" value="<%= data.content %>" name="content">
+                <br/>
+                <button type="submit">Update</button>
+            </form>
+        </div>
+    </div>
+</body>
