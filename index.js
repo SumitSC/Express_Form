@@ -4,12 +4,11 @@ const { MongoClient, ObjectId } = require('mongodb');
 
 const mongoUri =
   "mongodb+srv://dba:xpdcq2gYNSFJfD@cluster0.iflku.mongodb.net/dba?retryWrites=true&w=majority";
-// const client = new MongoClient(mongoUri, {
-//   useNewUrlParser: true,
-//   connectWithNoPrimary: true
-// });
+const client = new MongoClient(mongoUri, {
+  useNewUrlParser: true
+});
 
-//const db = MongoClient.db('dba');
+const db = client.db('dba');
 const express = require("express");
 const app = express();
 var user_session;
@@ -133,7 +132,7 @@ app.post("/todo", (req, res) => {
 
 
 
-MongoClient.connect(mongoUri, { useNewUrlParser: true },(err) => {
+client.connect((err) => {
   console.log(`err ==>`, err);
   app.listen(8000, () => {
     console.log(`Serving at http://localhost:8000`);
